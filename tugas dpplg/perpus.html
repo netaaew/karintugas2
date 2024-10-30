@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"></link>
+        <style>
+            body {
+                background-image: url("WhatsApp\ Image\ 2024-10-29\ at\ 08.44.16_b7d485ad.jpg");
+                background-size: cover;
+                font-family: Arial, sans-serif;
+            }
+            .form-container {
+                background-color: rgba(102, 68, 43, 0.8);
+                padding: 20px;
+                border: 2px dashed #FFFFFF;
+                border-radius: 10px;
+                max-width: 600px;
+                margin: 50px auto;
+                color: #FFFFFF;
+            }
+            .form-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            .form-container label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            .form-container input[type="text"],
+            .form-container input[type="date"],
+            .form-container select,
+            .form-container textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #FFFFFF;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.8);
+                color: #000000;
+            }
+            .form-container input[type="radio"],
+            .form-container input[type="checkbox"] {
+                margin-right: 10px;
+            }
+            .form-container .buttons {
+                text-align: center;
+            }
+            .form-container .buttons button {
+                background-color: #FFFFFF;
+                color: #000000;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Formulir Anggota Perpustakaan</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="ketikan nama kamu">
+                
+                <label for="birth-city">Kota Lahir</label>
+                <input type="text" id="birth-city" name="birth-city" placeholder="ketikan dan/atau pilih nama kota lahir kamu">
+                
+                <label for="birth-date">Tanggal Lahir</label>
+                <input type="date" id="birth-date" name="birth-date" placeholder="mm/dd/yyyy">
+                
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Pria</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Wanita</label>
+                
+                <label for="phone">No Telepon</label>
+                <input type="text" id="phone" name="phone" placeholder="ketikan no telepon kamu">
+                
+                <label>Makanan Favorit</label>
+                <input type="checkbox" id="Mie-Goreng-KSC" name="favorite-food" value="Mie-Goreng-KSC">
+                <label for="nasi-goreng">Mie Goreng KSC</label>
+                <input type="checkbox" id="Ayam-Geprek-Mak-e" name="favorite-food" value="Ayam-Geprek-Mak-e">
+                <label for="mie-goreng">Ayam geprek Mak e</label>
+                
+                
+                <label for="religion">Agama</label>
+                <select id="religion" name="religion">
+                    <option value="">Pilih</option>
+                    <option value="">Islam</option>
+                    <option value="">Katholik</option>
+                    <option value="">Kristen</option>
+                    <option value="">Konghucu</option>
+                    <option value="">Buddha</option>
+                    <option value="">Hindu</option>
+                </select>
+                
+                <label for="address">Alamat</label>
+                <textarea id="address" name="address" rows="4"></textarea>
+                
+                <div class="buttons">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>

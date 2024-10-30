@@ -1,0 +1,49 @@
+body {
+    background: url(WhatsApp\ Image\ 2024-10-29\ at\ 08.44.16_b7d485ad.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 6rem auto 0; 
+    width: 80%;
+    background-color: rgba(81, 66, 35, 0.7);
+    border: 2px dashed white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 5px 5px;
+    overflow: auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: white;
+}
+
+table {
+    width: 100%; 
+    margin: 20px auto; 
+    height: 25vh;
+    border: 2px dashed white;
+}
+
+th, td {
+    color: white;
+    text-align: center;
+    padding: 5.5px;
+}
+
+table td:hover, table th:hover {
+        background-color: rgb(97, 89, 70);
+    }
+
+@media (max-width: 600px) {
+        .container {
+            width: 90%; 
+
+        th, td {
+            font-size: 14px; 
+        }
+    }
+}
